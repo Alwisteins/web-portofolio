@@ -9,8 +9,8 @@ export default function Navbar() {
     setActiveTab(tabName);
   };
   return (
-    <div className="absolute right-5">
-      <button className="sm:hidden relative group right-[-40px]">
+    <div className="sticky top-0 right-5 p-3 bg-prim-white z-50 backdrop-filter backdrop-blur-sm bg-opacity-30">
+      <button className="sm:hidden sticky group">
         <div className="flex flex-col justify-between w-[20px] h-[13px] transform transition-all duration-300 origin-center overflow-hidden group-focus:-translate-y-1.5 group-focus:-rotate-90">
           <div className="bg-prim-black h-[2px] w-4 ml-1 transform transition-all duration-300 origin-left group-focus:rotate-[42deg] group-focus:w-2/3 delay-150"></div>
           <div className="bg-prim-black h-[2px] w-7 rounded transform transition-all duration-300 group-focus:translate-x-10"></div>
