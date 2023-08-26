@@ -60,6 +60,10 @@ export default {
         black: "#000000",
         gray: "#787878",
       },
+      sec: {
+        white: "#F5F5F5",
+        gray: "#CDCDCD"
+      },
     },
   },
   plugins: [],

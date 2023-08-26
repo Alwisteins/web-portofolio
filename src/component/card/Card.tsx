@@ -3,9 +3,7 @@ interface DataSkills {
   icon: string;
 }
 
-type Skills = DataSkills[];
-
-const language: DataSkills[] = [
+export const language: DataSkills[] = [
   {
     name: "HTML",
     icon: "./src/assets/bxl-html5.svg",
@@ -16,7 +14,7 @@ const language: DataSkills[] = [
   },
   {
     name: "javascript",
-    icon: "./src/assets/bxljavascript.svg",
+    icon: "./src/assets/bxl-javascript.svg",
   },
   {
     name: "typescript",
@@ -28,18 +26,18 @@ const language: DataSkills[] = [
   },
 ];
 
-const framework: DataSkills[] = [
+export const framework: DataSkills[] = [
   {
     name: "hapiJS",
     icon: "./src/assets/hapijs-icon.svg",
   },
   {
     name: "expressJS",
-    icon: "./src/assets/expressjs-arr21.svg",
+    icon: "./src/assets/expressjs-ar21.svg",
   },
 ];
 
-const library: DataSkills[] = [
+export const library: DataSkills[] = [
   {
     name: "reactJS",
     icon: "./src/assets/bxl-react.svg",
@@ -58,7 +56,7 @@ const library: DataSkills[] = [
   },
 ];
 
-const DBMS: DataSkills[] = [
+export const DBMS: DataSkills[] = [
   {
     name: "mongoDB",
     icon: "./src/assets/bxl-mongodb.svg",
@@ -69,18 +67,18 @@ const DBMS: DataSkills[] = [
   },
 ];
 
-const skills: Skills[] = [language, framework, library, DBMS];
-
-
-export const Card= ({ props }: any) => {
+export const Card = ({ name }: { name: DataSkills[] }) => {
   return (
-    <div>
-      {props.name.map((obj: DataSkills) => {
-        <div>
-          <img src={obj.icon} alt="" />
-          <h2>{obj.name}</h2>
-        </div>;
-      })}
+    <div className="relative top-3 sm:top-5 flex flex-wrap justify-center space-x-6 w[240px] sm:w-[544px] m-auto">
+      {name.map((obj: DataSkills, index: number) => (
+        <div
+          key={index}
+          className="w-24 sm:28 h-24 sm:28 box-border bg-sec-white border-2 border-sec-gray flex flex-col justify-center items-center sm:p-3 my-3"
+        >
+          <img className="w-16 sm:w-20 h-16 sm:h-20 m-auto" src={obj.icon} alt="" />
+          <h2 className="font-medium text-sm">{obj.name}</h2>
+        </div>
+      ))}
     </div>
   );
 };
