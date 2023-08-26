@@ -21,7 +21,7 @@ export default function Navbar() {
         <li>
           <Link
             to="/"
-            className={activeTab === 0 ? "font-medium text-prim-blue underline underline-offset-8" : ""}
+            className={activeTab === 0 ? "font-medium text-prim-blue sm:underline sm:underline-offset-8" : ""}
             onClick={() => handleTabClick(0)}
           >
             Home
@@ -30,7 +30,7 @@ export default function Navbar() {
         <li>
           <Link
             to="/about"
-            className={activeTab === 1 ? "font-medium text-prim-blue underline underline-offset-8" : ""}
+            className={activeTab === 1 ? "font-medium text-prim-blue sm:underline sm:underline-offset-8" : ""}
             onClick={() => handleTabClick(1)}
           >
             About
@@ -39,7 +39,7 @@ export default function Navbar() {
         <li>
           <Link
             to="/projects"
-            className={activeTab === 2 ? "font-medium text-prim-blue underline underline-offset-8" : ""}
+            className={activeTab === 2 ? "font-medium text-prim-blue sm:underline sm:underline-offset-8" : ""}
             onClick={() => handleTabClick(2)}
           >
             Projects
@@ -48,7 +48,7 @@ export default function Navbar() {
         <li>
           <Link
             to="/skills"
-            className={activeTab === 3 ? "font-medium text-prim-blue underline underline-offset-8" : ""}
+            className={activeTab === 3 ? "font-medium text-prim-blue sm:underline sm:underline-offset-8" : ""}
             onClick={() => handleTabClick(3)}
           >
             Skills
@@ -57,7 +57,7 @@ export default function Navbar() {
         <li>
           <Link
             to="/contacts"
-            className={activeTab === 4 ? "font-medium text-prim-blue underline underline-offset-8" : ""}
+            className={activeTab === 4 ? "font-medium text-prim-blue sm:underline sm:underline-offset-8" : ""}
             onClick={() => handleTabClick(4)}
           >
             Contacts

@@ -21,7 +21,7 @@ export default function Skill() {
         className={`relative top-40 sm:top-24`}
       >
         <TabList
-          className={`flex text-right mt-2 font-medium text-sm sm:mr-4 justify-center space-x-8`}
+          className={`flex text-right mt-2 font-medium text-sm sm:mr-4 justify-center space-x-2 sm:space-x-8`}
         >
           <Tab className={`px-1 rounded ${activeTab === 0 ? "text-prim-blue bg-sec-gray" : ""}`}>
             Language

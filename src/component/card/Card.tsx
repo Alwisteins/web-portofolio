@@ -69,11 +69,11 @@ export const DBMS: DataSkills[] = [
 
 export const Card = ({ name }: { name: DataSkills[] }) => {
   return (
-    <div className="relative top-3 sm:top-5 flex flex-wrap justify-center space-x-6 w[240px] sm:w-[544px] m-auto">
+    <div className="relative top-3 sm:top-5 flex flex-wrap justify-center w-[240px] sm:w-[544px] m-auto">
       {name.map((obj: DataSkills, index: number) => (
         <div
           key={index}
-          className="w-24 sm:28 h-24 sm:28 box-border bg-sec-white border-2 border-sec-gray flex flex-col justify-center items-center sm:p-3 my-3"
+          className="w-24 sm:28 h-24 sm:28 box-border bg-sec-white border-2 border-sec-gray flex flex-col justify-center items-center sm:p-3 m-3 rounded"
         >
           <img className="w-16 sm:w-20 h-16 sm:h-20 m-auto" src={obj.icon} alt="" />
           <h2 className="font-medium text-sm">{obj.name}</h2>
