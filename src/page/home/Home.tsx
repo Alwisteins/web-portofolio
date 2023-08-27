@@ -1,12 +1,12 @@
 export default function Home() {
   return (
-    <div>
+    <div className="relative bottom-8">
       <img
         src="./src/assets/profile-rounded.jpg"
         alt=""
-        className="relative sm:left-60 m-auto w-40 sm:w-[240px] h-40 sm:h-[240px] top-40 sm:top-32 border-solid border-4 rounded-full"
+        className="relative sm:left-60 m-auto w-40 sm:w-[240px] h-40 sm:h-[240px] top-40 sm:top-32 border-solid border-sec-blue border-4 rounded-full"
       />
-      <div className="relative top-48 sm:top-[170px] sm:absolute ml-[15%] sm:ml-[23%]">
+      <div className="relative top-48 sm:top-[120px] sm:absolute ml-[15%] sm:ml-[23%]">
         <h3 className="text-sm sm:text-lg font-semibold">
           Hi everyone<span className="animate-wave inline-block p-1">👋</span>, im Alwi Wahyu
           Waludin
