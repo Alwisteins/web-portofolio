@@ -23,16 +23,16 @@ export default function Skill() {
         <TabList
           className={`flex text-right mt-2 font-medium text-sm sm:mr-4 justify-center space-x-2 sm:space-x-8`}
         >
-          <Tab className={`px-1 rounded ${activeTab === 0 ? "text-prim-blue bg-sec-gray" : ""}`}>
+          <Tab className={`px-1 cursor-pointer rounded ${activeTab === 0 ? "text-prim-blue sm:underline sm:underline-offset-8" : ""}`}>
             Language
           </Tab>
-          <Tab className={`px-1 rounded ${activeTab === 1 ? "text-prim-blue bg-sec-gray" : ""}`}>
+          <Tab className={`px-1 cursor-pointer rounded ${activeTab === 1 ? "text-prim-blue sm:underline sm:underline-offset-8" : ""}`}>
             Framework
           </Tab>
-          <Tab className={`px-1 rounded ${activeTab === 2 ? "text-prim-blue bg-sec-gray" : ""}`}>
+          <Tab className={`px-1 cursor-pointer rounded ${activeTab === 2 ? "text-prim-blue sm:underline sm:underline-offset-8" : ""}`}>
             Library
           </Tab>
-          <Tab className={`px-1 rounded ${activeTab === 3 ? "text-prim-blue bg-sec-gray" : ""}`}>
+          <Tab className={`px-1 cursor-pointer rounded ${activeTab === 3 ? "text-prim-blue sm:underline sm:underline-offset-8" : ""}`}>
             DBMS
           </Tab>
         </TabList>

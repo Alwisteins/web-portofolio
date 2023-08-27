@@ -9,31 +9,31 @@ export default function Contacts() {
         <br className="sm:hidden" />
         my social media below:
       </p>
-      <div className="grid grid-cols-2 gap-4 w-[200px] m-auto relative top-28">
+      <div className="grid grid-cols-2 gap-4 w-[400px] px-32 m-auto relative top-28">
         <img
           src="./src/assets/mail.png"
           alt=""
           className="w-6 sm:w-8 h-6 sm:h-8"
         />
-        <p className=" text-xs self-center sm:text-sm">alwyyourbae@gmail.com</p>
+        <a className="underline text-xs self-center sm:text-sm" href="">alwyyourbae@gmail.com</a>
         <img
           src="./src/assets/bxl-github.svg"
           alt=""
           className="w-6 sm:w-8 h-6 sm:h-8"
         />
-        <p className=" text-xs self-center sm:text-sm">Alwisteins</p>
+        <a className="underline text-xs self-center sm:text-sm" href="">Alwisteins</a>
         <img
           src="./src/assets/bxl-linkedin.svg"
           alt=""
           className="w-6 sm:w-8 h-6 sm:h-8"
         />
-        <p className=" text-xs self-center sm:text-sm">Alwisteins</p>
+        <a className="underline text-xs self-center sm:text-sm" href="">Alwisteins</a>
         <img
           src="./src/assets/instagram.png"
           alt=""
           className="w-6 sm:w-8 h-6 sm:h-8"
         />
-        <p className=" text-xs self-center sm:text-sm">@alwywhyuu_</p>
+        <a className="underline text-xs self-center sm:text-sm" href="">@alwywhyuu_</a>
       </div>
     </div>
   );
