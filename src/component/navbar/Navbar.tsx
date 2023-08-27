@@ -9,7 +9,7 @@ export default function Navbar() {
     setActiveTab(tabName);
   };
   return (
-    <div className="flex justify-between sticky top-0 right-5 p-3 bg-prim-white z-50 backdrop-filter backdrop-blur-sm bg-opacity-30">
+    <div className="flex justify-between items-center sticky top-0 right-5 h-12 bg-prim-white z-50 backdrop-filter backdrop-blur-sm bg-opacity-30">
       <button className="sm:hidden sticky group">
         <div className="flex flex-col justify-between w-[20px] h-[13px] transform transition-all duration-300 origin-center overflow-hidden group-focus:-translate-y-1.5 group-focus:-rotate-90">
           <div className="bg-prim-black h-[2px] w-4 ml-1 transform transition-all duration-300 origin-left group-focus:rotate-[42deg] group-focus:w-2/3 delay-150"></div>
@@ -17,15 +17,15 @@ export default function Navbar() {
           <div className="bg-prim-black h-[2px] w-3 ml-2 transform transition-all duration-300 origin-left group-focus:-rotate-[42deg] group-focus:w-2/3 delay-150"></div>
         </div>
       </button>
-      <div className="flex space-x-2 cursor-pointer">
+      <div className="flex sm:ml-4 space-x-2 cursor-pointer">
         <img
           src="./src/assets/profile-rounded.jpg"
           alt=""
-          className="w-40 sm:w-8 h-40 sm:h-8 top-40 border-solid border-1 rounded-full"
+          className="w-40 sm:w-8 h-40 sm:h-8 top-40 border-solid border-sec-blue border-2 rounded-full"
         />
-        <h1 className="font-semibold font-['Phudu'] text-2xl">Alwisteins</h1>
+        <h1 className="font-['Roboto_Mono'] font-semibold text-2xl">Alwisteins</h1>
       </div>
-      <ul className="sm:flex text-right mt-2 italic text-sm sm:mr-4 sm:space-x-6">
+      <ul className="sm:flex text-right italic text-sm sm:mr-4 sm:space-x-6">
         <li>
           <Link
             to="/"
