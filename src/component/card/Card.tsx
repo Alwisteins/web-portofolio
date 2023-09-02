@@ -6,64 +6,64 @@ interface DataSkills {
 export const language: DataSkills[] = [
   {
     name: "HTML",
-    icon: "./public/bxl-html5.svg",
+    icon: "/bxl-html5.svg",
   },
   {
     name: "CSS",
-    icon: "./public/bxl-css3.svg",
+    icon: "/bxl-css3.svg",
   },
   {
     name: "javascript",
-    icon: "./public/bxl-javascript.svg",
+    icon: "/bxl-javascript.svg",
   },
   {
     name: "typescript",
-    icon: "./public/bxl-typescript.svg",
+    icon: "/bxl-typescript.svg",
   },
   {
     name: "nodeJS",
-    icon: "./public/bxl-nodejs.svg",
+    icon: "/bxl-nodejs.svg",
   },
 ];
 
 export const framework: DataSkills[] = [
   {
     name: "hapiJS",
-    icon: "./public/hapijs-icon.svg",
+    icon: "/hapijs-icon.svg",
   },
   {
     name: "expressJS",
-    icon: "./public/expressjs-ar21.svg",
+    icon: "/expressjs-ar21.svg",
   },
 ];
 
 export const library: DataSkills[] = [
   {
     name: "reactJS",
-    icon: "./public/bxl-react.svg",
+    icon: "/bxl-react.svg",
   },
   {
     name: "tailwind",
-    icon: "./public/bxl-tailwind-css.svg",
+    icon: "/bxl-tailwind-css.svg",
   },
   {
     name: "ejs",
-    icon: "./public/ejs.svg",
+    icon: "/ejs.svg",
   },
   {
     name: "mongoose",
-    icon: "./public/mongoose.svg",
+    icon: "/mongoose.svg",
   },
 ];
 
 export const DBMS: DataSkills[] = [
   {
     name: "mongoDB",
-    icon: "./public/bxl-mongodb.svg",
+    icon: "/bxl-mongodb.svg",
   },
   {
     name: "mySQL",
-    icon: "./public/mysql-ar21.svg",
+    icon: "/mysql-ar21.svg",
   },
 ];
 

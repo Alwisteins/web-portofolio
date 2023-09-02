@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <div className="relative bottom-8 z-[-5]">
       <img
-        src="./public/profile-rounded.jpg"
+        src="/profile-rounded.jpg"
         alt=""
         className="relative sm:left-72 m-auto w-40 sm:w-[250px] h-40 sm:h-[250px] top-40 sm:top-32 border-solid border-sec-blue border-4 rounded-full"
       />
@@ -23,7 +23,7 @@ export default function Home() {
         <div className="mt-3 flex items-center">
           <div className="h-6 w-24 sm:h-8 sm:w-32 bg-prim-blue flex justify-center items-center rounded sm:rounded-md">
             <img
-              src="./public/downloadFile.png"
+              src="/downloadFile.png"
               alt=""
               className="w-2.5 h-2.5 sm:w-3 sm:h-3 mr-1"
             />
@@ -36,14 +36,14 @@ export default function Home() {
           </div>
           <a href="https://github.com/Alwisteins">
             <img
-              src="./public/github-mark.svg"
+              src="/github-mark.svg"
               alt=""
               className="w-5 h-5 sm:w-7 sm:h-7 m-2"
             />
           </a>
           <a href="https://www.linkedin.com/in/alwi-wahyu-8bb256288/">
             <img
-              src="./public/bxl-linkedin.svg"
+              src="/bxl-linkedin.svg"
               alt=""
               className="w-5 h-5 sm:w-7 sm:h-7"
             />
