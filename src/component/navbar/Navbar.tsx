@@ -19,7 +19,7 @@ export default function Navbar() {
     <div className="flex justify-between items-center mx-5 pt-2 right-5 h-12 z-100">
       <div className="flex sm:ml-4 space-x-2 cursor-pointer">
         <img
-          src="./src/assets/profile-rounded.jpg"
+          src="/profile-rounded.jpg"
           alt=""
           className="w-8 h-8 top-40 border-solid border-sec-blue border-2 rounded-full"
         />
