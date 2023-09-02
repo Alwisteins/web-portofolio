@@ -1,12 +1,12 @@
 export default function Home() {
   return (
-    <div className="relative bottom-8">
+    <div className="relative bottom-8 z-[-5]">
       <img
         src="./src/assets/profile-rounded.jpg"
         alt=""
-        className="relative sm:left-60 m-auto w-40 sm:w-[240px] h-40 sm:h-[240px] top-40 sm:top-32 border-solid border-sec-blue border-4 rounded-full"
+        className="relative sm:left-64 m-auto w-40 sm:w-[240px] h-40 sm:h-[240px] top-40 sm:top-32 border-solid border-sec-blue border-4 rounded-full"
       />
-      <div className="relative top-48 sm:top-[120px] sm:absolute ml-[15%] sm:ml-[23%]">
+      <div className="relative left-10 top-48 sm:top-[120px] sm:absolute sm:ml-[23%]">
         <h3 className="text-sm sm:text-lg font-semibold">
           Hi everyone<span className="animate-wave inline-block p-1">👋</span>, im Alwi Wahyu
           Waludin
@@ -21,7 +21,7 @@ export default function Home() {
           <br /> ReactJS, NodeJS teck stack
         </p>
         <div className="mt-3 flex items-center">
-          <div className="h-6 w-24 sm:h-8 sm:w-32 bg-prim-blue flex justify-center items-center inline-block rounded sm:rounded-md">
+          <div className="h-6 w-24 sm:h-8 sm:w-32 bg-prim-blue flex justify-center items-center rounded sm:rounded-md">
             <img
               src="./src/assets/downloadFile.png"
               alt=""

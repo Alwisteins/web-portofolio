@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="relative bottom-[-200px] sm:top-[0px] max-w-screen-sm mx-2 sm:left-[50vh] sm:right-[50vh] sm:mx-4">
+    <div className="relative bottom-[-200px] top-0 max-w-screen-sm sm:left-[50vh] sm:right-[50vh] sm:mx-4 z-[-5]">
       <h1 className="font-semibold sm:text-2xl text-base">
         Hello<span className="animate-wave inline-block p-1">👋🏼</span>,
         everyone!

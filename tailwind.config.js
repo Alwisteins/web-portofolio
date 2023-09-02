@@ -62,7 +62,7 @@ export default {
       },
       sec: {
         white: "#F5F5F5",
-        gray: "#CDCDCD",
+        gray: "#f1f5f9",
         blue: "#3b82f6",
       },
     },

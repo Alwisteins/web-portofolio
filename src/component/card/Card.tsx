@@ -73,9 +73,9 @@ export const Card = ({ name }: { name: DataSkills[] }) => {
       {name.map((obj: DataSkills, index: number) => (
         <div
           key={index}
-          className="w-24 sm:28 h-24 sm:28 box-border bg-sec-white border-2 border-sec-gray flex flex-col justify-center items-center sm:p-3 m-3 rounded"
+          className="w-24 sm:28 h-24 sm:28 box-border bg-sec-white border-2 border-sec-gray flex flex-col justify-center hover:scale-105 outline-1 outline-prim-black ald  items-center sm:p-3 m-3 hover:shadow-md rounded"
         >
-          <img className="w-16 sm:w-20 h-16 sm:h-20 m-auto" src={obj.icon} alt="" />
+          <img className="w-16 sm:w-20 h-16 sm:h-20 m-auto hover:animate-wave hover:scale-150" src={obj.icon} alt="" />
           <h2 className="font-medium text-sm">{obj.name}</h2>
         </div>
       ))}

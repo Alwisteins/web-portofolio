@@ -5,7 +5,7 @@ function RootLayout({ children }: { children: React.ReactNode }) {
     return (
       <>
         <Navbar />
-        <div>{children}</div>
+        <div className="p-5">{children}</div>
         <Footer />
       </>
     );

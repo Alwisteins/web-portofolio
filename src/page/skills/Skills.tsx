@@ -21,18 +21,42 @@ export default function Skill() {
         className={`relative top-40 sm:top-24`}
       >
         <TabList
-          className={`flex text-right mt-2 font-medium text-sm sm:mr-4 justify-center space-x-2 sm:space-x-8`}
+          className={`flex text-right mt-2 font-medium text-sm sm:mr-4 justify-center space-x-2 sm:space-x-0`}
         >
-          <Tab className={`px-1 cursor-pointer rounded ${activeTab === 0 ? "text-prim-blue sm:underline sm:underline-offset-8" : ""}`}>
+          <Tab
+            className={`px-2 py-1 sm:px-3 sm:py-2 cursor-pointer rounded-t border-b-2 border-b-sec-gray ${
+              activeTab === 0
+                ? "outline-0 bg-sec-gray border-b-sec-blue"
+                : ""
+            }`}
+          >
             Language
           </Tab>
-          <Tab className={`px-1 cursor-pointer rounded ${activeTab === 1 ? "text-prim-blue sm:underline sm:underline-offset-8" : ""}`}>
+          <Tab
+            className={`px-2 py-1 sm:px-3 sm:py-2 cursor-pointer rounded-t border-b-2 border-b-sec-gray ${
+              activeTab === 1
+                ? "outline-0 bg-sec-gray border-b-sec-blue"
+                : ""
+            }`}
+          >
             Framework
           </Tab>
-          <Tab className={`px-1 cursor-pointer rounded ${activeTab === 2 ? "text-prim-blue sm:underline sm:underline-offset-8" : ""}`}>
+          <Tab
+            className={`px-2 py-1 sm:px-3 sm:py-2 cursor-pointer rounded-t border-b-2 border-b-sec-gray ${
+              activeTab === 2
+                ? "outline-0 bg-sec-gray border-b-sec-blue"
+                : ""
+            }`}
+          >
             Library
           </Tab>
-          <Tab className={`px-1 cursor-pointer rounded ${activeTab === 3 ? "text-prim-blue sm:underline sm:underline-offset-8" : ""}`}>
+          <Tab
+            className={`px-2 py-1 sm:px-3 sm:py-2 cursor-pointer rounded-t border-b-2 border-b-sec-gray ${
+              activeTab === 3
+                ? "outline-0 bg-sec-gray border-b-sec-blue"
+                : ""
+            }`}
+          >
             DBMS
           </Tab>
         </TabList>
