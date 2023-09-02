@@ -11,7 +11,7 @@ export default function Home() {
           Hi everyone<span className="animate-wave inline-block p-1">👋</span>, im Alwi Wahyu
           Waludin
         </h3>
-        <h1 className="text-2xl sm:text-5xl sm:my-5 animate-typing overflow-hidden whitespace-nowrap border-r-2 pr-6 border-r-white text-prim-blue font-bold my-1.5">
+        <h1 className="text-2xl sm:text-5xl sm:my-5 animate-typing overflow-hidden whitespace-nowrap border-r-2 sm:pr-6 border-r-white text-prim-blue font-bold my-1.5">
           Junior fullstack web
           <br /> developer
         </h1>

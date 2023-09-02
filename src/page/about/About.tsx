@@ -9,7 +9,7 @@ export default function About() {
         My name is Alwi wahyu waludin. I am a Junior Fullstack Web Developer,
         Telecommunications Network and Computer Engineering student who
         currently study in SMK Muhammadiyah 01 Pemalang. I live in Pemalang,
-        Middle Java, Indonesia.
+        Central Java, Indonesia.
       </p>
       <p className="text-xs sm:text-lg pt-3">
         I’m a self-taught learner who like to learn something new everyday. I
