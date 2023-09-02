@@ -21,10 +21,10 @@ export default function Skill() {
         className={`relative top-40 sm:top-24`}
       >
         <TabList
-          className={`flex text-right mt-2 font-medium text-sm sm:mr-4 justify-center space-x-2 sm:space-x-0`}
+          className={`flex text-right mt-2 font-medium text-sm sm:text-base sm:mr-4 justify-center space-x-2 sm:space-x-0`}
         >
           <Tab
-            className={`px-2 py-1 sm:px-3 sm:py-2 cursor-pointer rounded-t border-b-2 border-b-sec-gray ${
+            className={`px-2 py-1 sm:px-5 sm:py-3 cursor-pointer rounded-t border-b-2 border-b-sec-gray ${
               activeTab === 0
                 ? "outline-0 bg-sec-gray border-b-sec-blue"
                 : ""
@@ -33,7 +33,7 @@ export default function Skill() {
             Language
           </Tab>
           <Tab
-            className={`px-2 py-1 sm:px-3 sm:py-2 cursor-pointer rounded-t border-b-2 border-b-sec-gray ${
+            className={`px-2 py-1 sm:px-5 sm:py-3 cursor-pointer rounded-t border-b-2 border-b-sec-gray ${
               activeTab === 1
                 ? "outline-0 bg-sec-gray border-b-sec-blue"
                 : ""
@@ -42,7 +42,7 @@ export default function Skill() {
             Framework
           </Tab>
           <Tab
-            className={`px-2 py-1 sm:px-3 sm:py-2 cursor-pointer rounded-t border-b-2 border-b-sec-gray ${
+            className={`px-2 py-1 sm:px-5 sm:py-3 cursor-pointer rounded-t border-b-2 border-b-sec-gray ${
               activeTab === 2
                 ? "outline-0 bg-sec-gray border-b-sec-blue"
                 : ""
@@ -51,7 +51,7 @@ export default function Skill() {
             Library
           </Tab>
           <Tab
-            className={`px-2 py-1 sm:px-3 sm:py-2 cursor-pointer rounded-t border-b-2 border-b-sec-gray ${
+            className={`px-2 py-1 sm:px-5 sm:py-3 cursor-pointer rounded-t border-b-2 border-b-sec-gray ${
               activeTab === 3
                 ? "outline-0 bg-sec-gray border-b-sec-blue"
                 : ""

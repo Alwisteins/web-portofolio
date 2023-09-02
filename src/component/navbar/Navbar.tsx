@@ -36,7 +36,7 @@ export default function Navbar() {
           </div>
         </button>
         <ul
-          className={`sm:flex bg-prim-white absolute right-[-20px] top-10 sm:top-0 sm:mt-0 p-4 sm:p-0 text-right italic text-sm mr-4 sm:space-x-6 shadow-lg sm:shadow-none rounded-md ${
+          className={`sm:flex bg-prim-white absolute right-[-20px] top-10 sm:top-0 sm:mt-0 p-4 sm:p-0 text-right italic sm:text-base mr-4 sm:space-x-6 shadow-lg sm:shadow-none rounded-md ${
             isMenuOpen ? "block" : "hidden" // Menggunakan CSS classes untuk mengatur visibilitas
           }`}
         >
