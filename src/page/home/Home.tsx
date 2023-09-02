@@ -6,7 +6,7 @@ export default function Home() {
         alt=""
         className="relative sm:left-72 m-auto w-40 sm:w-[250px] h-40 sm:h-[250px] top-40 sm:top-32 border-solid border-sec-blue border-4 rounded-full"
       />
-      <div className="relative left-10 top-48 sm:top-[120px] sm:absolute sm:ml-[23%]">
+      <div className="relative left-10 top-48 sm:top-[120px] sm:absolute sm:ml-[20%]">
         <h3 className="text-sm sm:text-xl font-semibold">
           Hi everyone<span className="animate-wave inline-block p-1">👋</span>, im Alwi Wahyu
           Waludin
