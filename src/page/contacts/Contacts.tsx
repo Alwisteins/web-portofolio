@@ -1,3 +1,5 @@
+import MyForm from "../../component/form/Form";
+
 export default function Contacts() {
   return (
     <div className="z-[-5]">
@@ -15,18 +17,19 @@ export default function Contacts() {
           alwyyourbae@gmail.com
         </a>
         <img src="/bxl-github.svg" alt="" className="w-6 sm:w-8 h-6 sm:h-8" />
-        <a className="underline text-xs self-center sm:text-base" href="">
+        <a className="underline text-xs self-center sm:text-base" href="https://github.com/Alwisteins">
           Alwisteins
         </a>
         <img src="/bxl-linkedin.svg" alt="" className="w-6 sm:w-8 h-6 sm:h-8" />
-        <a className="underline text-xs self-center sm:text-base" href="">
+        <a className="underline text-xs self-center sm:text-base" href="https://www.linkedin.com/in/alwi-wahyu-8bb256288/">
           Alwisteins
         </a>
         <img src="/instagram.png" alt="" className="w-6 sm:w-8 h-6 sm:h-8" />
-        <a className="underline text-xs self-center sm:text-base" href="">
+        <a className="underline text-xs self-center sm:text-base" href="https://instagram.com/alwywhyuu_?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D">
           @alwywhyuu_
         </a>
       </div>
+      <MyForm />
     </div>
   );
 }

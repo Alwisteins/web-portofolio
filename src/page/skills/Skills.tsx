@@ -26,7 +26,7 @@ export default function Skill() {
           <Tab
             className={`px-2 py-2 sm:px-5 sm:py-3 cursor-pointer rounded-t border-b-2 border-b-sec-gray ${
               activeTab === 0
-                ? "outline-0 bg-sec-gray border-b-sec-blue"
+                ? "text-sec-blue bg-sec-gray"
                 : ""
             }`}
           >
@@ -35,7 +35,7 @@ export default function Skill() {
           <Tab
             className={`px-2 py-2 sm:px-5 sm:py-3 cursor-pointer rounded-t border-b-2 border-b-sec-gray ${
               activeTab === 1
-                ? "outline-0 bg-sec-gray border-b-sec-blue"
+                ? "text-sec-blue bg-sec-gray"
                 : ""
             }`}
           >
@@ -44,7 +44,7 @@ export default function Skill() {
           <Tab
             className={`px-2 py-2 sm:px-5 sm:py-3 cursor-pointer rounded-t border-b-2 border-b-sec-gray ${
               activeTab === 2
-                ? "outline-0 bg-sec-gray border-b-sec-blue"
+                ? "text-sec-blue bg-sec-gray"
                 : ""
             }`}
           >
@@ -53,7 +53,7 @@ export default function Skill() {
           <Tab
             className={`px-2 py-2 sm:px-5 sm:py-3 cursor-pointer rounded-t border-b-2 border-b-sec-gray ${
               activeTab === 3
-                ? "outline-0 bg-sec-gray border-b-sec-blue"
+                ? "text-sec-blue bg-sec-gray"
                 : ""
             }`}
           >

@@ -45,7 +45,7 @@ export default function Navbar() {
               to="/"
               className={
                 activeTab === 0
-                  ? "font-medium text-prim-blue"
+                  ? "font-medium text-sec-blue"
                   : ""
               }
               onClick={() => handleTabClick(0)}
@@ -58,7 +58,7 @@ export default function Navbar() {
               to="/about"
               className={
                 activeTab === 1
-                  ? "font-medium text-prim-blue"
+                  ? "font-medium text-sec-blue"
                   : ""
               }
               onClick={() => handleTabClick(1)}
@@ -71,7 +71,7 @@ export default function Navbar() {
               to="/projects"
               className={
                 activeTab === 2
-                  ? "font-medium text-prim-blue"
+                  ? "font-medium text-sec-blue"
                   : ""
               }
               onClick={() => handleTabClick(2)}
@@ -84,7 +84,7 @@ export default function Navbar() {
               to="/skills"
               className={
                 activeTab === 3
-                  ? "font-medium text-prim-blue"
+                  ? "font-medium text-sec-blue"
                   : ""
               }
               onClick={() => handleTabClick(3)}
@@ -97,7 +97,7 @@ export default function Navbar() {
               to="/contacts"
               className={
                 activeTab === 4
-                  ? "font-medium text-prim-blue"
+                  ? "font-medium text-sec-blue"
                   : ""
               }
               onClick={() => handleTabClick(4)}

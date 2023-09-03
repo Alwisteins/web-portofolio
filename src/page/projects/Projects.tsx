@@ -19,21 +19,21 @@ export default function Projects() {
         >
           <Tab
             className={`px-5 py-2 sm:px-8 cursor-pointer rounded-t border-b-2 border-b-sec-gray ${
-              activeTab === 0 ? "outline-0 bg-sec-gray border-b-sec-blue" : ""
+              activeTab === 0 ? "text-sec-blue bg-sec-gray" : ""
             }`}
           >
             Web
           </Tab>
           <Tab
             className={`px-5 py-2 sm:px-8 cursor-pointer rounded-t border-b-2 border-b-sec-gray ${
-              activeTab === 1 ? "outline-0 bg-sec-gray border-b-sec-blue" : ""
+              activeTab === 1 ? "text-sec-blue bg-sec-gray" : ""
             }`}
           >
             API
           </Tab>
           <Tab
             className={`px-5 py-2 sm:px-8 cursor-pointer rounded-t border-b-2 border-b-sec-gray ${
-              activeTab === 2 ? "outline-0 bg-sec-gray border-b-sec-blue" : ""
+              activeTab === 2 ? "text-sec-blue bg-sec-gray" : ""
             }`}
           >
             CLI
