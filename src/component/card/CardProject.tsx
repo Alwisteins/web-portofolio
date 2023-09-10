@@ -28,6 +28,16 @@ export const web: DataSkills[] = [
     description: "A friend portofolio website",
     tech: ["/bxl-html5.svg", "/bxl-css3.svg"],
   },
+  {
+    name: "alwisteins-portofolio",
+    image: "/alwisteins-portofolio.png",
+    source: [
+      "https://alwisteins.vercel.app/",
+      "https://github.com/Alwisteins/web-portofolio",
+    ],
+    description: "my portofolio website",
+    tech: ["bxl-react.svg", "/bxl-tailwind-css.svg", "bxl-typescript.svg"],
+  },
 ];
 
 export const CardProject = ({ data }: { data: DataSkills[] }): JSX.Element => {
