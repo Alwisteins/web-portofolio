@@ -38,12 +38,12 @@ export default function MyForm(): JSX.Element {
     <div className="mt-20 mx-auto max-w-md text-center">
       <form
         onSubmit={handleOnSubmit}
-        className="relative top-20 w-[520px] h-[250px] p-4 border-2 rounded-md"
+        className="relative top-20 w-[520px] h-[250px] p-4"
       >
         <div className="absolute">
           <label
             htmlFor="email"
-            className="block text-gray-600 font-semibold mb-2"
+            className="block font-semibold mb-2"
           >
             Email
           </label>
@@ -52,14 +52,14 @@ export default function MyForm(): JSX.Element {
             id="email"
             name="email"
             placeholder="Email..."
-            className="border-2 border-gray-300 p-2 rounded-md "
+            className="border-2  p-2 rounded-md"
             required
           />
         </div>
         <div className="absolute top-24">
           <label
             htmlFor="name"
-            className="block text-gray-600 font-semibold mb-2"
+            className="block font-semibold mb-2"
           >
             Name
           </label>
@@ -68,14 +68,14 @@ export default function MyForm(): JSX.Element {
             id="name"
             name="name"
             placeholder="Name..."
-            className="border-2 border-gray-300 p-2 rounded-md"
+            className="border-2  p-2 rounded-md"
             required
           />
         </div>
         <div className="absolute right-5">
           <label
             htmlFor="message"
-            className="block text-gray-600 font-semibold mb-2"
+            className="block font-semibold mb-2"
           >
             Message
           </label>
@@ -83,13 +83,13 @@ export default function MyForm(): JSX.Element {
             id="message"
             name="message"
             placeholder="Message..."
-            className="border-2 border-gray-300 p-2 rounded-md h-[125px] w-[250px] resize-none"
+            className="border-2  p-2 rounded-md h-[125px] w-[250px] resize-none"
             required
           ></textarea>
         </div>
         <button
           type="submit"
-          className="absolute bottom-5 left-[40%] border-2 text-white px-4 rounded-md hover:bg-prim-black hover:text-prim-white"
+          className="absolute bottom-5 left-[40%] border-[1px] bg-sec-gray text-white px-4 py-1 rounded-md hover:bg-prim-black hover:text-prim-white"
         >
           Submit
         </button>
