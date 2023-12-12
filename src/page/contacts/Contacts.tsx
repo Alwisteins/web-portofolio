@@ -2,30 +2,39 @@ import MyForm from "../../component/form/Form";
 
 export default function Contacts() {
   return (
-    <div className="z-[-5]">
-      <h1 className="font-semibold text-base sm:text-2xl relative text-center top-40 sm:top-20">
+    <div className="z-[-100]">
+      <h1 className="font-semibold text-base sm:text-2xl relative text-center sm:top-20">
         React me!
       </h1>
-      <p className="relative top-[150px] sm:top-[80px] text-xs text-center sm:text-base pt-3">
+      <p className="relative z-[-10] sm:top-[80px] text-xs text-center sm:text-base pt-3">
         Please don’t hesitate to get in touch with me by following
         <br className="sm:hidden" />
         my social media below:
       </p>
-      <div className="grid grid-cols-2 gap-4 w-[100px] ml-24 sm:mx-auto relative top-44 sm:top-28">
+      <div className="grid grid-cols-2 gap-4 w-[100px] ml-24 sm:mx-auto relative top-8 sm:top-28">
         <img src="/mail.png" alt="" className="w-6 sm:w-8 h-6 sm:h-8" />
         <a className="underline text-xs self-center sm:text-base" href="">
           alwyyourbae@gmail.com
         </a>
         <img src="/bxl-github.svg" alt="" className="w-6 sm:w-8 h-6 sm:h-8" />
-        <a className="underline text-xs self-center sm:text-base" href="https://github.com/Alwisteins">
+        <a
+          className="underline text-xs self-center sm:text-base"
+          href="https://github.com/Alwisteins"
+        >
           Alwisteins
         </a>
         <img src="/bxl-linkedin.svg" alt="" className="w-6 sm:w-8 h-6 sm:h-8" />
-        <a className="underline text-xs self-center sm:text-base" href="https://www.linkedin.com/in/alwi-wahyu-8bb256288/">
+        <a
+          className="underline text-xs self-center sm:text-base"
+          href="https://www.linkedin.com/in/alwi-wahyu-8bb256288/"
+        >
           Alwisteins
         </a>
         <img src="/instagram.png" alt="" className="w-6 sm:w-8 h-6 sm:h-8" />
-        <a className="underline text-xs self-center sm:text-base" href="https://instagram.com/alwywhyuu_?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D">
+        <a
+          className="underline text-xs self-center sm:text-base"
+          href="https://instagram.com/alwywhyuu_?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
+        >
           @alwywhyuu_
         </a>
       </div>

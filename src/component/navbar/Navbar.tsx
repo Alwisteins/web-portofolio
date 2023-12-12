@@ -6,6 +6,14 @@ export default function Navbar() {
   const [activeTab, setActiveTab] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false); // Menambahkan state untuk mengontrol visibilitas menu
 
+  const NavLink: { url: string; name: string }[] = [
+    { url: "/", name: "Home" },
+    { url: "/about", name: "About" },
+    { url: "/projects", name: "Projects" },
+    { url: "/skills", name: "Skills" },
+    { url: "/contacts", name: "Contacts" },
+  ];
+
   const handleTabClick = (tabName: number) => {
     setActiveTab(tabName);
     setIsMenuOpen(false); // Menutup menu setelah tab dipilih
@@ -40,71 +48,19 @@ export default function Navbar() {
             isMenuOpen ? "block" : "hidden" // Menggunakan CSS classes untuk mengatur visibilitas
           }`}
         >
-          <li>
-            <Link
-              to="/"
-              className={
-                activeTab === 0
-                  ? "font-medium text-sec-blue"
-                  : ""
-              }
-              onClick={() => handleTabClick(0)}
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/about"
-              className={
-                activeTab === 1
-                  ? "font-medium text-sec-blue"
-                  : ""
-              }
-              onClick={() => handleTabClick(1)}
-            >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/projects"
-              className={
-                activeTab === 2
-                  ? "font-medium text-sec-blue"
-                  : ""
-              }
-              onClick={() => handleTabClick(2)}
-            >
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/skills"
-              className={
-                activeTab === 3
-                  ? "font-medium text-sec-blue"
-                  : ""
-              }
-              onClick={() => handleTabClick(3)}
-            >
-              Skills
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/contacts"
-              className={
-                activeTab === 4
-                  ? "font-medium text-sec-blue"
-                  : ""
-              }
-              onClick={() => handleTabClick(4)}
-            >
-              Contacts
-            </Link>
-          </li>
+          {NavLink.map((item, index) => (
+            <li key={index}>
+              <Link
+                to={item.url}
+                className={
+                  activeTab === index ? "font-medium text-sec-blue" : ""
+                }
+                onClick={() => handleTabClick(index)}
+              >
+                {item.name}
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
     </div>

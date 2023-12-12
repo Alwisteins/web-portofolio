@@ -35,16 +35,13 @@ export default function MyForm(): JSX.Element {
   };
 
   return (
-    <div className="mt-20 mx-auto max-w-md text-center">
+    <div className=" sm:mt-20 mx-auto max-w-md text-center">
       <form
         onSubmit={handleOnSubmit}
-        className="relative top-20 w-[520px] h-[250px] p-4"
+        className="relative top-10 w-[340px] h-[400px] sm:w-[520px] sm:h-[250px] p-4"
       >
-        <div className="absolute">
-          <label
-            htmlFor="email"
-            className="block font-semibold mb-2"
-          >
+        <div className="absolute left-[10%] right-[10%] sm:left-0 sm:right-0">
+          <label htmlFor="email" className="block font-semibold mb-2">
             Email
           </label>
           <input
@@ -52,15 +49,12 @@ export default function MyForm(): JSX.Element {
             id="email"
             name="email"
             placeholder="Email..."
-            className="border-2  p-2 rounded-md"
+            className="border-2  p-2 rounded-md w-[250px]"
             required
           />
         </div>
-        <div className="absolute top-24">
-          <label
-            htmlFor="name"
-            className="block font-semibold mb-2"
-          >
+        <div className="absolute top-24 left-[10%] right-[10%] sm:left-0 sm:right-0">
+          <label htmlFor="name" className="block font-semibold mb-2">
             Name
           </label>
           <input
@@ -68,15 +62,12 @@ export default function MyForm(): JSX.Element {
             id="name"
             name="name"
             placeholder="Name..."
-            className="border-2  p-2 rounded-md"
+            className="border-2  p-2 rounded-md w-[250px]"
             required
           />
         </div>
-        <div className="absolute right-5">
-          <label
-            htmlFor="message"
-            className="block font-semibold mb-2"
-          >
+        <div className="absolute top-44 left-[10%] right-[10%] sm:top-0 sm:left-0 sm:right-0">
+          <label htmlFor="message" className="block font-semibold mb-2">
             Message
           </label>
           <textarea
@@ -89,7 +80,7 @@ export default function MyForm(): JSX.Element {
         </div>
         <button
           type="submit"
-          className="absolute bottom-5 left-[40%] border-[1px] bg-sec-gray text-white px-4 py-1 rounded-md hover:bg-prim-black hover:text-prim-white"
+          className="absolute bottom-0 sm:bottom-5 left-[40%] border-[1px] bg-prim-black text-prim-white sm:bg-sec-gray text-white px-4 py-1 rounded-md hover:sm:bg-prim-black hover:sm:text-prim-white"
         >
           Submit
         </button>
