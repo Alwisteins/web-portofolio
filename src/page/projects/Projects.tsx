@@ -4,6 +4,15 @@ import { web, CardProject } from "../../component/card/CardProject";
 
 export default function Projects() {
   const [activeTab, setActiveTab] = useState(0); // State awal diatur ke indeks 0
+  const tabListName: string[] = ["Web", "API", "CLI"];
+  const tabPanelList: JSX.Element[] = [
+    <h1>
+      <CardProject data={web} />
+    </h1>,
+    <h1>Tab 1</h1>,
+    <h1>Tab 2</h1>,
+  ];
+
   return (
     <div>
       <h1 className="font-semibold text-base sm:text-2xl relative text-center top-40 sm:top-20">
@@ -17,38 +26,21 @@ export default function Projects() {
         <TabList
           className={`flex text-right mt-2 font-medium text-sm sm:text-base sm:mr-4 justify-center space-x-2 sm:space-x-0`}
         >
-          <Tab
-            className={`px-5 py-2 sm:px-8 cursor-pointer rounded-t border-b-2 border-b-sec-gray ${
-              activeTab === 0 ? "text-sec-blue bg-sec-gray" : ""
-            }`}
-          >
-            Web
-          </Tab>
-          <Tab
-            className={`px-5 py-2 sm:px-8 cursor-pointer rounded-t border-b-2 border-b-sec-gray ${
-              activeTab === 1 ? "text-sec-blue bg-sec-gray" : ""
-            }`}
-          >
-            API
-          </Tab>
-          <Tab
-            className={`px-5 py-2 sm:px-8 cursor-pointer rounded-t border-b-2 border-b-sec-gray ${
-              activeTab === 2 ? "text-sec-blue bg-sec-gray" : ""
-            }`}
-          >
-            CLI
-          </Tab>
+          {tabListName.map((name, index) => (
+            <Tab
+              key={index}
+              className={`px-5 py-2 sm:px-8 cursor-pointer rounded-t border-b-2 border-b-sec-gray ${
+                activeTab === index ? "text-sec-blue bg-sec-gray" : ""
+              }`}
+            >
+              {name}
+            </Tab>
+          ))}
         </TabList>
 
-        <TabPanel>
-          <h1><CardProject data={web} /></h1>
-        </TabPanel>
-        <TabPanel>
-          <h1>tab 2</h1>
-        </TabPanel>
-        <TabPanel>
-          <h1>tab 3</h1>
-        </TabPanel>
+        {tabPanelList.map((element, index) => (
+          <TabPanel key={index}>{element}</TabPanel>
+        ))}
       </Tabs>
     </div>
   );

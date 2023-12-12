@@ -67,7 +67,10 @@ export const CardProject = ({ data }: { data: DataSkills[] }): JSX.Element => {
           <p className="px-4 py-2 text-sm">{obj.description}</p>
           <div className="flex space-x-2 px-4">
             {obj.tech.map((image: string, index: number) => (
-              <div className="flex items-center justify-center w-10 sm:w-8 h-10 sm:h-8 bg-prim-gray rounded-xl">
+              <div
+                key={index}
+                className="flex items-center justify-center w-10 sm:w-8 h-10 sm:h-8 bg-prim-gray rounded-xl"
+              >
                 <img
                   key={index}
                   src={image}

@@ -1,4 +1,4 @@
-interface DataSkills {
+export interface DataSkills {
   name: string;
   icon: string;
 }
