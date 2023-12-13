@@ -40,20 +40,7 @@ export default function MyForm(): JSX.Element {
         onSubmit={handleOnSubmit}
         className="relative top-10 w-[340px] h-[400px] sm:w-[520px] sm:h-[250px] p-4"
       >
-        <div className="absolute left-[10%] right-[10%] sm:left-0 sm:right-0">
-          <label htmlFor="email" className="block font-semibold mb-2">
-            Email
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email..."
-            className="border-2  p-2 rounded-md w-[250px]"
-            required
-          />
-        </div>
-        <div className="absolute top-24 left-[10%] right-[10%] sm:left-0 sm:right-0">
+        <div className="absolute top-24 left-[10%] right-[10%] sm:left-0 sm:right-[17rem] sm:top-0">
           <label htmlFor="name" className="block font-semibold mb-2">
             Name
           </label>
@@ -66,7 +53,20 @@ export default function MyForm(): JSX.Element {
             required
           />
         </div>
-        <div className="absolute top-44 left-[10%] right-[10%] sm:top-0 sm:left-0 sm:right-0">
+        <div className="absolute left-[10%] right-[10%] sm:left-0 sm:right-[17rem] sm:top-[5rem]">
+          <label htmlFor="email" className="block font-semibold mb-2">
+            Email
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email..."
+            className="border-2  p-2 rounded-md w-[250px]"
+            required
+          />
+        </div>
+        <div className="absolute top-44 left-[10%] right-[10%] sm:top-0 sm:left-[17rem] sm:right-0">
           <label htmlFor="message" className="block font-semibold mb-2">
             Message
           </label>
@@ -80,7 +80,7 @@ export default function MyForm(): JSX.Element {
         </div>
         <button
           type="submit"
-          className="absolute bottom-0 sm:bottom-5 left-[40%] border-[1px] bg-prim-black text-prim-white sm:bg-sec-gray text-white px-4 py-1 rounded-md hover:sm:bg-prim-black hover:sm:text-prim-white"
+          className="absolute bottom-0 sm:bottom-5 left-[38%] border-[1px] bg-prim-black text-prim-white sm:border-prim-black sm:bg-prim-white sm:text-prim-black px-4 py-1 rounded-md hover:sm:bg-prim-black hover:sm:text-prim-white"
         >
           Submit
         </button>
