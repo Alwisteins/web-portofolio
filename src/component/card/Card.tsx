@@ -78,7 +78,7 @@ export const Card = ({ name }: { name: DataSkills[] }) => {
           <img
             className="w-16 sm:w-20 h-16 sm:h-20 m-auto hover:animate-wave hover:scale-150"
             src={obj.icon}
-            alt={obj.name}
+            alt={obj.name + " image"}
           />
           <h2 className="font-medium text-base">{obj.name}</h2>
         </div>

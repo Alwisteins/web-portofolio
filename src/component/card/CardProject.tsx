@@ -51,7 +51,7 @@ export const CardProject = ({ data }: { data: DataSkills[] }): JSX.Element => {
           <img
             className="w-80 sm:w-96 h-40 sm:h-48 m-auto rounded-xl"
             src={obj.image}
-            alt=""
+            alt={obj.image + " image"}
           />
           <div className="flex justify-between items-center px-4 pt-2">
             <h1 className="font-semibold font-['Rubik'] text-xl">{obj.name}</h1>
