@@ -7,7 +7,7 @@ const rubik = Rubik({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Alwi Wahyu Waludin - Fullstack Web Developer",
-  description: "This is my personal portfolio web pages",
+  description: "A Fullstack Web Developer based in Pemalang, Indonesia.",
 };
 
 export default function RootLayout({
