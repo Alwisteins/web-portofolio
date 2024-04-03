@@ -1,0 +1,2 @@
+- add animasi kelap kelip ke logo
+- add bola gradient di hero section text
