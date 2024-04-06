@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
     <div className="flex py-7 px-14 items-center justify-between z-50 bg-white top-0 sticky">
-      <div>
+      <div className="animate-pulse">
         <h1 className="font-bold text-xl">ALWISTEINS</h1>
       </div>
         <ul className="flex space-x-10">
