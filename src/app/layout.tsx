@@ -3,7 +3,7 @@ import { Rubik } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
-const rubik = Rubik({ weight: "400", subsets: ["latin"] });
+const rubik = Rubik({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Alwi Wahyu Waludin - Fullstack Web Developer",
