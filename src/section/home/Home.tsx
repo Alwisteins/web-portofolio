@@ -1,5 +1,5 @@
 import Image from "next/image";
-import AlwiProfilePicture from "../../../public/alwi-django.jpeg";
+import AlwiProfilePicture from '@/alwi-django.jpeg'
 import { HiDocumentDownload } from "react-icons/hi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Button } from "flowbite-react";
