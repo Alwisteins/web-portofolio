@@ -1,5 +1,5 @@
 import Image from "next/image";
-import AlwiProfilePicture from '@/alwi-django.jpeg'
+import AlwiProfilePicture from "@/alwi-django.jpeg";
 import { HiDocumentDownload } from "react-icons/hi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Button } from "flowbite-react";
@@ -7,7 +7,7 @@ import { Button } from "flowbite-react";
 export default function Home() {
   return (
     <div className="flex flex-col sm:flex-row-reverse items-center justify-evenly py-5 w-screen h-[90vh] bg-[#f9f9f9]">
-      <div className="flex sm:w-[22rem] sm:h-[22rem]">
+      <div className="flex w-80 h-80 sm:w-[22rem] sm:h-[22rem]">
         <Image
           src={AlwiProfilePicture}
           alt="Alwi Main Image"
