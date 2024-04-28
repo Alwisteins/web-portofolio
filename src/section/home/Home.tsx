@@ -7,7 +7,7 @@ import BlobAnimate from "@/animate/BlobAnimate";
 
 export default function Home() {
   return (
-    <div className="flex flex-col sm:flex-row-reverse items-center justify-center sm:space-x-12 sm:space-x-reverse w-screen h-[90vh] bg-[#f9f9f9]">
+    <div className="flex flex-col sm:flex-row-reverse items-center justify-start p-5 sm:justify-center sm:space-x-12 sm:space-x-reverse w-screen h-[90vh] bg-[#f9f9f9]">
       <div className="flex w-72 h-72 sm:w-[22rem] sm:h-[22rem]">
         <Image
           src={AlwiProfilePicture}
