@@ -7,7 +7,7 @@ import BlobAnimate from "@/animate/BlobAnimate";
 
 export default function Home() {
   return (
-    <div className="flex flex-col sm:flex-row-reverse items-center justify-evenly -space-y-10 px-5 sm:py-5 w-screen h-[90vh] bg-[#f9f9f9]">
+    <div className="flex flex-col sm:flex-row-reverse items-center justify-center sm:space-x-12 sm:space-x-reverse w-screen h-[90vh] bg-[#f9f9f9]">
       <div className="flex w-72 h-72 sm:w-[22rem] sm:h-[22rem]">
         <Image
           src={AlwiProfilePicture}
@@ -22,7 +22,7 @@ export default function Home() {
 
       <BlobAnimate />
 
-      <div className="flex flex-col items-center sm:items-start text-center sm:text-start sm:w-[35rem] space-y-2 z-50">
+      <div className="flex flex-col items-center sm:items-start text-center sm:text-start sm:w-[35rem] my-5 mx-10 sm:m-0 space-y-2 z-50">
         <h1 className="text-4xl sm:text-7xl font-bold">
           Hi<span className="animate-wave inline-block p-1">👋</span>, im Alwi
           Wahyu Waludin.
