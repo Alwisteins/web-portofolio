@@ -3,6 +3,7 @@ import AlwiProfilePicture from "@/alwi-django.jpeg";
 import { HiDocumentDownload } from "react-icons/hi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Button } from "flowbite-react";
+import BlobAnimate from "@/animate/BlobAnimate";
 
 export default function Home() {
   return (
@@ -19,7 +20,9 @@ export default function Home() {
         />
       </div>
 
-      <div className="flex flex-col items-center sm:items-start sm:w-[35rem] space-y-2">
+      <BlobAnimate />
+
+      <div className="flex flex-col items-center sm:items-start sm:w-[35rem] space-y-2 z-50">
         <h1 className="text-2xl sm:text-7xl font-bold">
           Hi<span className="animate-wave inline-block p-1">👋</span>, im Alwi
           Wahyu Waludin.
