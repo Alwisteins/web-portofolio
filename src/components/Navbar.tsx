@@ -1,6 +1,15 @@
+"use client";
+import { useState } from "react";
 import Link from "next/link";
+import HamburgerMenu from "./HamburgerMenu";
 
 export default function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   const NavLink: { url: string; name: string }[] = [
     { url: "#", name: "Home" },
     { url: "#about", name: "About" },
@@ -14,13 +23,18 @@ export default function Navbar() {
       <div className="animate-pulse">
         <h1 className="font-bold text-xl">ALWISTEINS</h1>
       </div>
-        <ul className="flex space-x-10">
-          {NavLink.map((item, index) => (
-            <li key={index}>
-              <Link href={item.url}>{item.name}</Link>
-            </li>
-          ))}
-        </ul>
+      <HamburgerMenu onClick={toggleMenu} isMenuOpen={isMenuOpen} />
+      <ul
+        className={`absolute top-24 w-3/4 sm:static sm:flex sm:space-x-10 bg-white rounded-lg ${
+          isMenuOpen ? "block" : "hidden"
+        }`}
+      >
+        {NavLink.map((item, index) => (
+          <li key={index} className='flex items-center text-center w-full h-10'>
+            <Link href={item.url} className='grow'>{item.name}</Link>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
