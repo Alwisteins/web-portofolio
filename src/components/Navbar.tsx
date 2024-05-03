@@ -25,12 +25,12 @@ export default function Navbar() {
       </div>
       <HamburgerMenu onClick={toggleMenu} isMenuOpen={isMenuOpen} />
       <ul
-        className={`absolute top-24 w-3/4 sm:static sm:flex sm:space-x-10 bg-white rounded-lg ${
+        className={`absolute top-24 w-3/4 sm:w-auto sm:static sm:flex sm:space-x-10 bg-white rounded-lg ${
           isMenuOpen ? "block" : "hidden"
         }`}
       >
         {NavLink.map((item, index) => (
-          <li key={index} className='flex items-center text-center w-full h-10'>
+          <li key={index} className='flex items-center text-center w-full sm:w-auto h-10 sm:h-auto'>
             <Link href={item.url} className='grow'>{item.name}</Link>
           </li>
         ))}
