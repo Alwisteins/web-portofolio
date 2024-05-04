@@ -36,7 +36,7 @@ export default function Home() {
 
         <p className="text-base sm:text-lg text-slate-600">
           A{" "}
-          <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent ng-clip-text">
+          <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
             Fullstack Web Developer
           </span>{" "}
           based in Pemalang, Indonesia.
