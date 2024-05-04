@@ -8,7 +8,7 @@ import Texture from "@/texture.webp";
 export default function Home() {
   return (
     <div className="flex flex-col sm:flex-row-reverse items-center justify-start py-8 sm:justify-center space-y-8 sm:space-x-12 sm:space-x-reverse w-screen h-[90vh] bg-[#f9f9f9]">
-      <div className="flex w-72 h-72 sm:w-[22rem] sm:h-[22rem]">
+      <div className="flex w-72 h-72 sm:w-[22rem] sm:h-[22rem] z-50">
         <Image
           src={AlwiProfilePicture}
           alt="Alwi Main Image"
@@ -20,7 +20,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="absolute sm:top-40 sm:left-0">
+      <div className="absolute sm:top-40 sm:left-0 left-10 top-80">
         <div className="absolute z-20 w-[40rem] h-[40rem] sm:-top-16 opacity-60 mix-blend-overlay">
           <Image src={Texture} alt="Gradient Texture" className="w-full" />
         </div>
