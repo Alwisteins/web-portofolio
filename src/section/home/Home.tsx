@@ -3,7 +3,7 @@ import AlwiProfilePicture from "@/alwi-django.jpeg";
 import { HiDocumentDownload } from "react-icons/hi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Button } from "flowbite-react";
-import BlobAnimate from "@/animate/BlobAnimate";
+import Texture from "@/texture.webp";
 
 export default function Home() {
   return (
@@ -20,9 +20,15 @@ export default function Home() {
         />
       </div>
 
-      <BlobAnimate />
+      <div className="absolute sm:top-40 sm:left-0">
+        <div className="absolute z-20 w-[40rem] h-[40rem] sm:-top-16 opacity-60 mix-blend-overlay">
+          <Image src={Texture} alt="Gradient Texture" className="w-full" />
+        </div>
+        <div className="absolute sm:left-14 w-52 h-52 z-10 bg-blue-500 opacity-60 rounded-full filter blur-2xl animate-blob"></div>
+        <div className="absolute sm:top-4 sm:left-32 w-72 h-72 bg-purple-400 opacity-75 rounded-full filter blur-2xl animate-blob animation-delay-6"></div>
+      </div>
 
-      <div className="flex flex-col items-center sm:items-start text-center sm:text-start sm:w-[35rem] my-5 mx-10 sm:m-0 space-y-4 z-50">
+      <div className="flex flex-col items-center sm:items-start text-center sm:text-start sm:w-[35rem] my-5 mx-10 sm:m-0 space-y-4 z-30">
         <h1 className="text-4xl sm:text-7xl font-bold">
           Hi<span className="animate-wave inline-block p-1">👋</span>, im Alwi
           Wahyu Waludin.
