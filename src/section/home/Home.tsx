@@ -24,8 +24,8 @@ export default function Home() {
         <div className="absolute left-0 sm:-top-16 z-20 w-96 h-96 sm:w-[40rem] sm:h-[40rem] opacity-80 mix-blend-overlay">
           <Image src={Texture} alt="Gradient Texture" className="w-full" />
         </div>
-        <div className="absolute top-8 left-14 w-32 h-32 sm:w-52 sm:h-52 z-10 bg-blue-500 opacity-40 rounded-full filter blur-2xl animate-blob"></div>
-        <div className="absolute top-20 left-28 sm:left-32 w-52 h-52 sm:w-72 sm:h-72 bg-purple-400 opacity-100 rounded-full filter blur-2xl animate-blob animation-delay-6"></div>
+        <div className="absolute top-8 left-14 w-32 h-32 sm:w-52 sm:h-52 z-10 bg-blue-500 opacity-60 rounded-full filter blur-2xl animate-blob"></div>
+        <div className="absolute top-20 left-28 sm:left-32 w-52 h-52 sm:w-72 sm:h-72 bg-purple-400 opacity-70 rounded-full filter blur-2xl animate-blob animation-delay-6"></div>
       </div>
 
       <div className="flex flex-col items-center sm:items-start text-center sm:text-start sm:w-[35rem] my-5 mx-10 sm:m-0 space-y-4 z-30">
