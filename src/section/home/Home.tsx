@@ -1,5 +1,5 @@
 import Image from "next/image";
-import AlwiProfilePicture from "@/alwi-django.jpeg";
+import AlwiIcon from "@/alwi-rounded-mask.jpg";
 import { HiDocumentDownload } from "react-icons/hi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Button } from "flowbite-react";
@@ -7,10 +7,10 @@ import Texture from "@/texture.webp";
 
 export default function Home() {
   return (
-    <div className="flex flex-col sm:flex-row-reverse items-center justify-start py-8 sm:justify-center space-y-8 sm:space-x-12 sm:space-x-reverse w-screen h-[90vh] bg-[#f9f9f9]">
+    <div className="flex flex-col sm:flex-row-reverse items-center justify-start py-8 sm:justify-center space-y-8 sm:space-x-12 sm:space-x-reverse w-screen h-[90vh]">
       <div className="flex w-72 h-72 sm:w-[22rem] sm:h-[22rem]">
         <Image
-          src={AlwiProfilePicture}
+          src={AlwiIcon}
           alt="Alwi Main Image"
           quality={100}
           sizes="100vw"
