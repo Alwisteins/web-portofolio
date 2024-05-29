@@ -25,7 +25,7 @@ export default function Navbar() {
       </div>
       <HamburgerMenu onClick={toggleMenu} isMenuOpen={isMenuOpen} />
       <ul
-        className={`absolute top-24 w-3/4 sm:w-auto sm:static sm:flex sm:space-x-10 bg-white rounded-lg ${
+        className={`absolute top-24 w-3/4 sm:w-auto sm:static sm:flex sm:space-x-8 bg-white rounded-lg ${
           isMenuOpen ? "block" : "hidden"
         }`}
       >
