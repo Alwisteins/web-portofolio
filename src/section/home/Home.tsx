@@ -7,7 +7,7 @@ import Texture from "@/texture.webp";
 
 export default function Home() {
   return (
-    <div className="flex flex-col sm:flex-row-reverse items-center justify-start py-10 sm:justify-center space-y-8 sm:space-x-12 sm:space-x-reverse w-screen h-[85vh]">
+    <div className="flex flex-col sm:flex-row-reverse items-center justify-start py-10 sm:justify-center space-y-8 sm:space-x-12 sm:space-x-reverse w-screen h-[90vh]">
       <div className="flex w-72 h-72 sm:w-[22rem] sm:h-[22rem]">
         <Image
           src={AlwiMainPicture}

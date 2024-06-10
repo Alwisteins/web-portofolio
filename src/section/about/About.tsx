@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="p-10 sm:px-60 sm:h-[70vh] flex flex-col items-center justify-center">
+    <div className="px-10 py-16 sm:px-60 sm:h-[70vh] flex flex-col items-center justify-center">
       <h1 className="font-bold text-center sm:text-5xl text-3xl">About me</h1>
       <p className="text-justify sm:text-lg pt-3">
         My name is Alwi wahyu waludin. A fresh graduate from SMK Muhammadiyah 01
