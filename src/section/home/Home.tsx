@@ -1,11 +1,15 @@
+"use client";
+
+import { useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import AlwiMainPicture from "@/alwi-django.jpeg";
 import { HiDocumentDownload } from "react-icons/hi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { Button } from "flowbite-react";
 import Texture from "@/texture.webp";
 
 export default function Home() {
+  const ref = useRef("noopener noreferrer");
   return (
     <div className="flex flex-col sm:flex-row-reverse items-center justify-start py-10 sm:justify-center space-y-8 sm:space-x-12 sm:space-x-reverse w-screen h-[90vh]">
       <div className="flex w-72 h-72 sm:w-[22rem] sm:h-[22rem]">
@@ -43,10 +47,15 @@ export default function Home() {
         </p>
 
         <div className="flex items-center space-x-3">
-          <Button color="blue">
+          <Link
+            href="./cv-developer-alwi-wahyu-waludin.pdf"
+            target="_blank"
+            ref={ref}
+            className="flex px-4 py-2 text-white rounded-md bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring focus:ring-blue-300"
+          >
             <HiDocumentDownload className="mr-1 h-5 w-5" />
             Download CV
-          </Button>
+          </Link>
           <a href="https://github.com/Alwisteins">
             <FaGithub className="w-7 h-7" />
           </a>
