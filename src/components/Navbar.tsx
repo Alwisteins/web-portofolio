@@ -14,7 +14,6 @@ export default function Navbar() {
     { url: "#", name: "Home" },
     { url: "#about", name: "About" },
     { url: "#projects", name: "Projects" },
-    { url: "#skills", name: "Skills" },
     { url: "#contacts", name: "Contacts" },
   ];
 
@@ -27,11 +26,12 @@ export default function Navbar() {
       <ul
         className={`absolute top-24 w-3/4 sm:w-auto sm:static sm:flex sm:space-x-8 bg-white rounded-lg ${
           isMenuOpen ? "block" : "hidden"
-        }`}
-      >
+        }`}>
         {NavLink.map((item, index) => (
-          <li key={index} className='flex items-center text-center w-full sm:w-auto h-10 sm:h-auto'>
-            <Link href={item.url} className='grow'>{item.name}</Link>
+          <li key={index} className="flex items-center text-center w-full sm:w-auto h-10 sm:h-auto">
+            <Link href={item.url} className="grow">
+              {item.name}
+            </Link>
           </li>
         ))}
       </ul>

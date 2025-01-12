@@ -11,9 +11,9 @@ export const CardsProject = ({ projects }: CardProjectProps): JSX.Element => {
       {projects.map((project) => (
         <div
           key={project.name}
-          className="w-80 sm:w-[25rem] p-5 space-y-3 bg-white rounded-xl border border-slate-200"
-        >
+          className="w-80 sm:w-[25rem] p-5 space-y-3 bg-white rounded-xl border border-slate-200">
           <Image
+            className="rounded-md"
             src={project.image}
             alt={project.name}
             width={500}
@@ -33,13 +33,7 @@ export const CardsProject = ({ projects }: CardProjectProps): JSX.Element => {
           <p className="text-sm text-justify">{project.description}</p>
           <div className="flex space-x-2">
             {project.tech.map((src, index) => (
-              <Image
-                src={src}
-                alt={`${index}`}
-                width={20}
-                height={20}
-                key={index}
-              />
+              <Image src={src} alt={`${index}`} width={20} height={20} key={index} />
             ))}
           </div>
         </div>
