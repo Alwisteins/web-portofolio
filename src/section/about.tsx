@@ -22,7 +22,7 @@ const principles = [
 
 export default function About() {
   return (
-    <section id="about" className="py-16 px-10 min-h-screen">
+    <section id="about" className="py-16 px-10 min-h-screen flex flex-col justify-center">
       <div className="flex flex-col items-center text-center gap-4 mb-6">
         <h2 className="text-[#425849] text-2xl md:text-4xl font-bold">
           Partner Website untuk Bisnis Lokal

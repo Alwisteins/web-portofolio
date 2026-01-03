@@ -24,7 +24,7 @@ export default function Work() {
           <Link
             href={`/work/${project.slug}`}
             key={project.slug}
-            className="w-full max-w-xl space-y-4 cursor-pointer group">
+            className="w-full space-y-4 cursor-pointer group">
             <Image
               src={project.image}
               alt={project.title}

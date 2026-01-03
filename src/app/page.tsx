@@ -6,7 +6,7 @@ import CTA from "@/section/CTA";
 
 export default function Page() {
   return (
-    <main className="bg-[#FFEFDF]">
+    <main>
       <Hero />
       <Work />
       <Service />

@@ -42,7 +42,7 @@ export default function Navbar() {
               py-4
               space-y-3
               text-center
-              sm:static sm:flex sm:w-auto sm:space-y-0 sm:space-x-8 sm:shadow-none sm:py-0 sm:rounded-full
+              sm:static sm:flex sm:w-auto sm:space-y-0 sm:shadow-none sm:py-0 sm:rounded-full
               ${isMenuOpen ? "block" : "hidden sm:flex"}
             `}>
             {NavLink.map((item, index) => (
