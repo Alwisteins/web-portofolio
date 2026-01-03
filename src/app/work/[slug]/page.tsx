@@ -7,11 +7,49 @@ import { projects } from "@/data/projects";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
+import { motion } from "framer-motion";
+import type { Variants } from "framer-motion";
 
 type Props = {
   params: {
     slug: string;
   };
+};
+
+const container: Variants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15,
+      delayChildren: 0.1,
+    },
+  },
+};
+
+const fadeUp: Variants = {
+  hidden: { opacity: 0, y: 30 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.7,
+      ease: [0.16, 1, 0.3, 1],
+    },
+  },
+};
+
+const imageReveal: Variants = {
+  hidden: { opacity: 0, y: 40, scale: 0.98 },
+  show: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      duration: 0.9,
+      ease: [0.16, 1, 0.3, 1],
+    },
+  },
 };
 
 export default function WorkDetail({ params }: Props) {
@@ -22,15 +60,20 @@ export default function WorkDetail({ params }: Props) {
   }
 
   return (
-    <section className="py-16 px-6 md:px-12 max-w-6xl mx-auto">
-      <div className="my-6">
+    <motion.section
+      variants={container}
+      initial="hidden"
+      animate="show"
+      className="py-16 px-6 md:px-12 max-w-6xl mx-auto">
+      <motion.div variants={fadeUp} className="my-6">
         <Link
           href={"/"}
           className="inline-flex items-center gap-2 font-medium hover:underline underline-offset-4">
           <ArrowLeft /> Kembali
         </Link>
-      </div>
-      <div className="mb-10">
+      </motion.div>
+
+      <motion.div variants={imageReveal} className="mb-10">
         <Image
           src={project.image}
           alt={project.title}
@@ -38,9 +81,9 @@ export default function WorkDetail({ params }: Props) {
           height={700}
           className="rounded-2xl w-full object-cover"
         />
-      </div>
+      </motion.div>
 
-      <div className="space-y-6">
+      <motion.div variants={fadeUp} className="space-y-6">
         <h1 className="text-3xl md:text-4xl font-bold text-[#425849]">{project.title}</h1>
 
         <div className="flex flex-wrap gap-3 text-sm text-neutral-700">
@@ -59,6 +102,7 @@ export default function WorkDetail({ params }: Props) {
               View Live Demo →
             </Link>
           )}
+
           <Button
             size="lg"
             className="py-6 w-full sm:w-auto hover:shadow-xl border-4 border-white rounded-full"
@@ -68,7 +112,7 @@ export default function WorkDetail({ params }: Props) {
             </span>
           </Button>
         </div>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 }
