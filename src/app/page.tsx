@@ -1,15 +1,17 @@
-import Home from "@/section/home/Home";
-import About from "@/section/about/About";
-import Projects from "@/section/projects/Projects";
-import Contacts from "@/section/contacts/Contacts";
+import Hero from "@/section/hero";
+import Work from "@/section/work";
+import Service from "@/section/service";
+import About from "@/section/about";
+import CTA from "@/section/CTA";
 
 export default function Page() {
   return (
-    <main className="flex w-full flex-col items-center justify-between space-y-1 bg-[#f9f9f9]">
-      <Home />
+    <main className="bg-[#FFEFDF]">
+      <Hero />
+      <Work />
+      <Service />
       <About />
-      <Projects />
-      <Contacts />
+      <CTA />
     </main>
   );
 }
