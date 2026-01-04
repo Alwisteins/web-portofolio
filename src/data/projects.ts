@@ -37,7 +37,7 @@ export const projects: Project[] = [
     image: "/projects/devgrow-labs.png",
     description:
       "Website company profile untuk software house yang menampilkan layanan, portofolio, dan value perusahaan dengan desain modern dan profesional.",
-    demoLink: "https://devgrowlabs.vercel.app",
+    demoLink: "https://devgrow-labs.vercel.app",
   },
   {
     title: "UmrahEase - Umrah Travel Agency Website",
