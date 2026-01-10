@@ -49,9 +49,8 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const NavLink = [
-    { url: "#work", name: "Work" },
-    { url: "#services", name: "Services" },
-    { url: "#about", name: "About" },
+    { url: "/", name: "Home" },
+    { url: "/work", name: "Work" },
   ];
 
   return (

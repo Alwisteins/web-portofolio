@@ -1,7 +1,8 @@
 export type Project = {
   title: string;
   slug: string;
-  category: "website" | "design";
+  type: "website" | "design";
+  category: "Business Landing Pages" | "Business Websites" | "Web System & Dashboard";
   businessType: string;
   image: string;
   description: string;
@@ -12,7 +13,8 @@ export const projects: Project[] = [
   {
     title: "KratonStay - Hotel Booking Website",
     slug: "kratonstay-hotel-booking",
-    category: "website",
+    type: "website",
+    category: "Business Landing Pages",
     businessType: "Hotel Business",
     image: "/projects/kratonstay.png",
     description:
@@ -22,7 +24,8 @@ export const projects: Project[] = [
   {
     title: "Growth2Up - Digital Marketing Landing Page",
     slug: "growth2up-digital-marketing",
-    category: "website",
+    type: "website",
+    category: "Business Landing Pages",
     businessType: "Service Business",
     image: "/projects/growth2up.png",
     description:
@@ -32,7 +35,8 @@ export const projects: Project[] = [
   {
     title: "DevGrow Labs - Software House Company Website",
     slug: "devgrow-labs-company-website",
-    category: "website",
+    type: "website",
+    category: "Business Websites",
     businessType: "Service Business",
     image: "/projects/devgrow-labs.png",
     description:
@@ -40,9 +44,20 @@ export const projects: Project[] = [
     demoLink: "https://devgrow-labs.vercel.app",
   },
   {
+    title: "Prime Dental - Dental Clinic Landing Page",
+    slug: "prime-dental-clinic",
+    type: "website",
+    category: "Business Landing Pages",
+    businessType: "Clinic Business",
+    image: "/projects/prime-dental.png",
+    description: "",
+    demoLink: "https://prime-dental.vercel.app/",
+  },
+  {
     title: "UmrahEase - Umrah Travel Agency Website",
     slug: "umrahease-travel-agency",
-    category: "design",
+    type: "design",
+    category: "Business Landing Pages",
     businessType: "Travel Agency Business",
     image: "/projects/umrahease.png",
     description:

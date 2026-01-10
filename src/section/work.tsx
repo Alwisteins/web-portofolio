@@ -5,6 +5,8 @@ import Link from "next/link";
 import { projects } from "@/data/projects";
 import { motion } from "framer-motion";
 import { fadeUp, container } from "@/animation/fadeup";
+import { Button } from "@/components/ui/button";
+import { FaBriefcase } from "react-icons/fa";
 
 export default function Work() {
   return (
@@ -37,7 +39,7 @@ export default function Work() {
         whileInView="show"
         viewport={{ once: true, margin: "-150px" }}
         className={`grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center`}>
-        {projects.map((project) => (
+        {projects.slice(0, 4).map((project) => (
           <motion.div key={project.slug} variants={fadeUp} className="w-full max-w-xl">
             <Link href={`/work/${project.slug}`} className="space-y-4 cursor-pointer group block">
               <Image
@@ -47,10 +49,8 @@ export default function Work() {
                 height={500}
                 className="group-hover:scale-95 transition-transform w-full rounded-2xl border border-white object-cover"
               />
-
               <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3">
                 <h3 className="text-lg font-medium leading-snug sm:w-1/2">{project.title}</h3>
-
                 <div className="flex flex-wrap gap-2 text-xs text-neutral-600">
                   <span className="px-3 py-1 rounded-full bg-white/70">{project.category}</span>
                   <span className="px-3 py-1 rounded-full bg-white/70">{project.businessType}</span>
@@ -59,6 +59,19 @@ export default function Work() {
             </Link>
           </motion.div>
         ))}
+      </motion.div>
+      <motion.div
+        variants={fadeUp}
+        className={`mt-6 flex flex-col md:flex-row justify-center gap-4 md:gap-6 w-full`}>
+        <Button
+          asChild
+          variant="secondary"
+          size="lg"
+          className="py-6 w-full sm:w-auto hover:shadow-xl border-4 rounded-full">
+          <Link href="/work" className="flex items-center gap-2">
+            Lihat project lainnya <FaBriefcase />
+          </Link>
+        </Button>
       </motion.div>
     </section>
   );
