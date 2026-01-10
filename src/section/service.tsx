@@ -45,13 +45,17 @@ export default function Service() {
         <Tabs
           defaultValue={services[0].category}
           className="w-full flex flex-col items-center justify-center">
-          <TabsList className="space-x-6 w-fit h-full">
+          <TabsList className="flex w-full sm:w-fit overflow-x-auto h-full whitespace-nowrap space-x-2 scrollbar-hide sm:space-x-6">
             {services.map((service) => (
-              <TabsTrigger key={service.category} value={service.category} className="py-3 px-6">
+              <TabsTrigger
+                key={service.category}
+                value={service.category}
+                className="px-4 py-2 sm:px-6 sm:py-3 flex-shrink-0">
                 {service.category}
               </TabsTrigger>
             ))}
           </TabsList>
+
           <div className="mt-3">
             {services.map((service) => (
               <TabsContent
