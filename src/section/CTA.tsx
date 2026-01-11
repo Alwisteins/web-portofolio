@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import React from "react";
-import { FaWhatsapp } from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io";
 import { motion } from "framer-motion";
 import { fadeUp, container } from "@/animation/fadeup";
 
@@ -36,7 +36,7 @@ export default function CTA() {
             className="py-6 w-full sm:w-auto hover:shadow-xl border-4 border-white rounded-full"
             onClick={() => window.open("https://wa.me/6281361296979")}>
             <span className="flex items-center gap-2">
-              Diskusi Project <FaWhatsapp />
+              Diskusi Project <IoLogoWhatsapp />
             </span>
           </Button>
         </motion.div>

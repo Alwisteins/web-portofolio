@@ -52,8 +52,8 @@ export default function Work() {
               <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3">
                 <h3 className="text-lg font-medium leading-snug sm:w-1/2">{project.title}</h3>
                 <div className="flex flex-wrap gap-2 text-xs text-neutral-600">
+                  <span className="px-3 py-1 rounded-full bg-white/70">{project.type}</span>
                   <span className="px-3 py-1 rounded-full bg-white/70">{project.category}</span>
-                  <span className="px-3 py-1 rounded-full bg-white/70">{project.businessType}</span>
                 </div>
               </div>
             </Link>
@@ -65,7 +65,6 @@ export default function Work() {
         className={`mt-6 flex flex-col md:flex-row justify-center gap-4 md:gap-6 w-full`}>
         <Button
           asChild
-          variant="secondary"
           size="lg"
           className="py-6 w-full sm:w-auto hover:shadow-xl border-4 rounded-full">
           <Link href="/work" className="flex items-center gap-2">

@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { FaWhatsapp, FaBriefcase } from "react-icons/fa";
+import { MdDesignServices } from "react-icons/md";
+import { IoLogoWhatsapp } from "react-icons/io";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
@@ -64,20 +65,20 @@ export default function Hero() {
           className={`flex flex-col md:flex-row justify-center gap-4 md:gap-6 w-full`}>
           <Button
             size="lg"
-            className="py-6 w-full sm:w-auto hover:shadow-xl border-4 border-white rounded-full"
-            onClick={() => window.open("https://wa.me/6281361296979")}>
-            <span className="flex items-center gap-2">
-              Diskusi Project <FaWhatsapp />
-            </span>
+            className="py-6 w-full sm:w-auto hover:shadow-xl border-4 border-white rounded-full">
+            <Link href="#services" className="flex items-center gap-2">
+              Lihat layanan & paket <MdDesignServices />
+            </Link>
           </Button>
           <Button
             asChild
             variant="secondary"
             size="lg"
+            onClick={() => window.open("https://wa.me/6281361296979")}
             className="py-6 w-full sm:w-auto hover:shadow-xl border-4 rounded-full">
-            <Link href="#work" className="flex items-center gap-2">
-              Lihat hasil kerja <FaBriefcase />
-            </Link>
+            <span className="flex items-center gap-2">
+              Diskusi project <IoLogoWhatsapp />
+            </span>
           </Button>
         </motion.div>
       </motion.div>

@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { FaWhatsapp } from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io";
 import { services } from "@/data/services";
 import { motion } from "framer-motion";
 import { fadeUp, container } from "@/animation/fadeup";
@@ -38,7 +38,7 @@ export default function Service() {
           initial="hidden"
           whileInView="show"
           className="text-neutral-600 max-w-3xl text-base sm:text-lg">
-          Solusi web lengkap untuk bantu bisnismu tumbuh.
+          Solusi website sesuai kebutuhan bisnismu.
         </motion.p>
       </motion.div>
       <div className="flex justify-center">
@@ -100,8 +100,8 @@ export default function Service() {
                           size="lg"
                           className="w-full rounded-xl hover:shadow-lg transition-all"
                           onClick={() => openWhatsApp(pkg.name)}>
-                          Diskusi via WhatsApp
-                          <FaWhatsapp className="ml-2 text-lg" />
+                          Diskusi Paket Ini
+                          <IoLogoWhatsapp className="ml-2 text-lg" />
                         </Button>
                       </div>
                     </motion.div>
