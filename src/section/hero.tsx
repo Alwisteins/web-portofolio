@@ -74,7 +74,7 @@ export default function Hero() {
             asChild
             variant="secondary"
             size="lg"
-            onClick={() => window.open("https://wa.me/6281361296979")}
+            onClick={() => window.open("https://wa.me/6285226038821")}
             className="py-6 w-full sm:w-auto hover:shadow-xl border-4 rounded-full">
             <span className="flex items-center gap-2">
               Diskusi project <IoLogoWhatsapp />

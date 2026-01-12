@@ -34,7 +34,7 @@ export default function CTA() {
           <Button
             size="lg"
             className="py-6 w-full sm:w-auto hover:shadow-xl border-4 border-white rounded-full"
-            onClick={() => window.open("https://wa.me/6281361296979")}>
+            onClick={() => window.open("https://wa.me/6285226038821")}>
             <span className="flex items-center gap-2">
               Diskusi Project <IoLogoWhatsapp />
             </span>

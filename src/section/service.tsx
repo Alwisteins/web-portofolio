@@ -9,7 +9,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function Service() {
   const openWhatsApp = (packageName: string) => {
-    const phoneNumber = "6281361296979";
+    const phoneNumber = "6285226038821";
 
     const message = `Halo, Saya tertarik untuk mendiskusikan paket layanan *${packageName}*. Bisa dijelaskan lebih detail terkait scope, timeline, dan estimasi pengerjaannya? Terima kasih.`;
 
