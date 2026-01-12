@@ -2,21 +2,7 @@ import type { Metadata } from "next";
 import { Instrument_Serif, Instrument_Sans, Space_Grotesk, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-
-const instrumentSerif = Instrument_Serif({
-  weight: ["400"],
-  subsets: ["latin"],
-});
-
-const instrumentSans = Instrument_Sans({
-  weight: ["400"],
-  subsets: ["latin"],
-});
-
-const spaceGrotesk = Space_Grotesk({
-  weight: ["300", "400", "500", "600", "700"],
-  subsets: ["latin"],
-});
+import { Analytics } from "@vercel/analytics/next";
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
@@ -35,6 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="overflow-x-hidden bg-[#FFEFDF]">
           <Navbar />
           {children}
+          <Analytics />
         </div>
       </body>
     </html>
