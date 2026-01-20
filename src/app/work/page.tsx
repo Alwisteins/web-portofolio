@@ -61,6 +61,7 @@ export default function Work() {
           <option value="Business Landing Pages">Business Landing Pages</option>
           <option value="Business Websites">Business Websites</option>
           <option value="Web System & Dashboard">Web System & Dashboard</option>
+          <option value="Mobile Application">Mobile Application</option>
         </select>
       </div>
 

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Instrument_Serif, Instrument_Sans, Space_Grotesk, Poppins } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { Analytics } from "@vercel/analytics/next";
